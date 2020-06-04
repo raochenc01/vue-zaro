@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2020-06-04 15:08:50
+ * @LastEditTime: 2020-06-04 16:14:41
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \vue-zaro\mock\user.js
+ */
 
 const tokens = {
   admin: {
@@ -12,13 +20,15 @@ const users = {
   'admin-token': {
     roles: ['admin'],
     introduction: 'I am a super administrator',
-    avatar: 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
+    avatar:
+      'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
     name: 'Super Admin'
   },
   'editor-token': {
     roles: ['editor'],
     introduction: 'I am an editor',
-    avatar: 'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
+    avatar:
+      'https://wpimg.wallstcn.com/f778738c-e4f8-4870-b634-56703b4acafe.gif',
     name: 'Normal Editor'
   }
 }
@@ -49,7 +59,7 @@ export default [
 
   // get user info
   {
-    url: '/vue-admin-template/user/info\.*',
+    url: '/vue-admin-template/user/info.*',
     type: 'get',
     response: config => {
       const { token } = config.query
